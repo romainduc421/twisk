@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerApplication">
+    <children>
+        <fx:include fx:id="obsNavigateur" prefHeight="${root.height}" source="ObservateurNavigateur.fxml" AnchorPane.leftAnchor="300" AnchorPane.topAnchor="30" />
+        <fx:include fx:id="obsMondeIG" source="ObservateurMondeIG.fxml" />
+        <fx:include fx:id="obsMenu" prefWidth="${root.width}" source="ObservateurMenu.fxml" AnchorPane.leftAnchor="0" />
+        <fx:include fx:id="obsPanneauAjouterEtapeIG" prefHeight="${root.height}" source="ObservateurPanneauAjouterEtapeIG.fxml" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="30" />
+        <fx:include fx:id="obsPanneauAccueil" prefHeight="${root.height}" source="ObservateurPanneauLancement.fxml" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="30" />
+        <fx:include fx:id="obsPanneauInformations" prefHeight="${root.height}" source="ObservateurPanneauInformations.fxml" AnchorPane.leftAnchor="1358" AnchorPane.topAnchor="30" />
+    </children>
+</AnchorPane>

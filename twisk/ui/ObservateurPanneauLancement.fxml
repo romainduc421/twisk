@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefWidth="300.0" style="-fx-background-color: #603174;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerPanneauLancement">
+   <children>
+      <HBox alignment="CENTER" prefWidth="250.0" style="-fx-border-style: solid; -fx-border-color: DARKGREEN; -fx-border-width: 2; -fx-border-insets: 20 50 0 50;">
+         <children>
+            <Label text="Set up the world" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox fx:id="hName" prefWidth="200.0">
+         <children>
+            <Label text="Number of customers :" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="nbClients" prefHeight="25.0" prefWidth="75.0" />
+         </children>
+      </HBox>
+      <!-- Autoriser les boucles
+      -->
+      <HBox fx:id="hBoucles" layoutX="10.0" layoutY="61.0" prefWidth="200.0">
+         <children>
+            <Label text="Are loops allowed ?" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="10.0" />
+               </padding>
+            </Label>
+            <CheckBox fx:id="boucles" mnemonicParsing="false" />
+         </children>
+      </HBox>
+      <HBox prefWidth="150.0">
+         <children>
+            <Label fx:id="loiTitle" text="Label" textFill="WHITE" />
+            <Label fx:id="loi" text="Label" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="30.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+
+      <HBox fx:id="hButtonLancement" alignment="CENTER" prefWidth="200.0">
+         <children>
+            <Button fx:id="launchButton" mnemonicParsing="false" onAction="#simuler" onMouseEntered="#mouseEnteredLaunch" onMouseExited="#mouseExitedLaunch" />
+            <Button fx:id="pauseButton" layoutX="152.0" layoutY="10.0" mnemonicParsing="false" onAction="#pauseSimulation" onMouseEntered="#mouseEnteredPause" onMouseExited="#mouseExitedPause" />
+            <Button fx:id="stopButton" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" onAction="#stopSimulation" onMouseEntered="#mouseEnteredStop" onMouseExited="#mouseExitedStop" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TextInputDialog fx:id="dialog" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerParametreGuichet" title="Modifier le nombre de jetons">
+    <dialogPane>
+        <DialogPane>
+            <content>
+                <VBox spacing="10.0">
+                    <HBox>
+                        <children>
+                            <Label text="Number of tokens :  " />
+                            <TextField fx:id="nbJetons" promptText="Nombre (entier) " />
+                        </children>
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                    </HBox>
+                </VBox>
+            </content>
+            <buttonTypes>
+                <ButtonType fx:id="confirm" fx:constant="OK" />
+                <ButtonType fx:id="cancel" fx:constant="CANCEL" />
+            </buttonTypes>
+        </DialogPane>
+    </dialogPane>
+</TextInputDialog>

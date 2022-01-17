@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="panneauInformations" prefWidth="197.0" style="-fx-background-color: #313974;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerPanneauInformations">
+   <children>
+       <HBox fx:id="hTitre" alignment="CENTER" style="-fx-border-style: solid; -fx-border-color: white; -fx-border-width: 2; -fx-border-insets: 20 25 0 25;">
+           <children>
+               <Label text="Informations d'utilisations" textFill="WHITE">
+                   <font>
+                       <Font size="18.0" />
+                   </font>
+               </Label>
+           </children>
+       </HBox>
+      <HBox fx:id="hTexteInformations">
+         <children>
+             <Label fx:id="textInformations" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="90.0" />
+               </padding></Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

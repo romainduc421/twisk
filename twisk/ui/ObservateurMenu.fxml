@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox prefHeight="30.0" style="-fx-background-color: #0d4978;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerMenu">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <MenuBar style="-fx-background-color: #0d4978;" styleClass="-fx-text-fill: white" stylesheets="@../ressources/css/style.css">
+              <menus>
+                <Menu fx:id="file" mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem accelerator="CTRL+X" mnemonicParsing="false" onAction="#exit" text="Leave" />
+                    <MenuItem fx:id="save" accelerator="CTRL+S" mnemonicParsing="false" onAction="#save" text="Save" />
+                      <Menu fx:id="load" mnemonicParsing="false" text="Upload...">
+                          <MenuItem fx:id="open" accelerator="CTRL+O" mnemonicParsing="false" onAction="#load" text="Others" />
+                      </Menu>
+
+                  </items>
+                </Menu>
+                <Menu fx:id="edit" mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem fx:id="deleteSelect" accelerator="Delete" mnemonicParsing="false" onAction="#deleteSelect" style="-fx-text-fill: grey" text="Delete selection" />
+                    <MenuItem fx:id="unselect" accelerator="R" mnemonicParsing="false" onAction="#unselect" style="-fx-text-fill: grey" text="Unselect" />
+                    <MenuItem fx:id="rename" accelerator="CTRL+R" mnemonicParsing="false" onAction="#rename" style="-fx-text-fill: grey" text="Rename" />
+                  </items>
+                </Menu>
+                <Menu fx:id="setting" mnemonicParsing="false" text="Parameters">
+                  <items>
+                      <MenuItem fx:id="delai" mnemonicParsing="false" onAction="#modifyActivite" style="-fx-text-fill: grey" text="Modify delay/timeGap" />
+                      <MenuItem fx:id="jetons" mnemonicParsing="false" onAction="#modifyGuichet" style="-fx-text-fill: grey" text="Modify Tokens" />
+                  </items>
+                </Menu>
+                <Menu fx:id="loi" mnemonicParsing="false" text="Probabilities">
+                  <items>
+                      <MenuItem mnemonicParsing="false" onAction="#gaussienne" text="Gaussian distribution" />
+                      <MenuItem mnemonicParsing="false" onAction="#poisson" text="Poisson's law" />
+                      <MenuItem mnemonicParsing="false" onAction="#uniforme" text="Uniform" />
+                  </items>
+                </Menu>
+                <Menu fx:id="world" mnemonicParsing="false" text="World">
+                  <items>
+                    <MenuItem fx:id="entree" mnemonicParsing="false" onAction="#entree" style="-fx-text-fill: grey" text="Entry" />
+                        <MenuItem fx:id="sortie" mnemonicParsing="false" onAction="#sortie" style="-fx-text-fill: grey" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Tools">
+                   <items>
+                     <MenuItem mnemonicParsing="false" onAction="#zoom" text="Zoom" />
+                   </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="App" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</HBox>

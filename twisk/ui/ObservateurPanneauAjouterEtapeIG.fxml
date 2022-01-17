@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="panneauAjouterEtapeIG" prefWidth="300.0" style="-fx-background-color: #FFE2A1;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerPanneauAjouterEtapeIG">
+   <children>
+      <HBox fx:id="hTitreActivite" alignment="CENTER" style="-fx-border-style: solid; -fx-border-color: black; -fx-border-width: 2; -fx-border-insets: 20 50 0 50;">
+         <children>
+            <Label text="Activity" textFill="BLACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox fx:id="hNomActivite" layoutX="10.0" layoutY="10.0">
+         <children>
+            <Label text="Name :" textFill="BLACK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="nameActivite" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="hDelai" layoutX="10.0" layoutY="110.0">
+         <children>
+            <Label text="Delay :" textFill="BLACK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="delai" prefWidth="150.0" />
+         </children></HBox>
+      <HBox fx:id="hEcartTemps" layoutX="10.0" layoutY="210.0">
+         <children>
+            <Label text="TimeGap :" textFill="BLACK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="ecartTemps" prefWidth="109.0" />
+         </children></HBox>
+      <HBox fx:id="hButtonActivite" alignment="CENTER" layoutX="10.0" layoutY="410.0">
+         <children>
+            <Button fx:id="addButtonActivite" mnemonicParsing="false" onAction="#addActivite" />
+         </children></HBox>
+      <HBox fx:id="hSeparateur" layoutX="10.0" layoutY="310.0">
+         <children>
+            <Separator prefWidth="300.0" />
+         </children></HBox>
+      <HBox fx:id="hTitreGuichet" alignment="CENTER" layoutX="10.0" layoutY="10.0" style="-fx-border-style: solid; -fx-border-color: black; -fx-border-width: 2; -fx-border-insets: 20 50 0 50;">
+         <children>
+            <Label text="Single-counter" textFill="BLACK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox fx:id="hNomGuichet" layoutX="10.0" layoutY="61.0">
+         <children>
+            <Label text="Name :" textFill="BLACK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="nameGuichet" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="hNbJetons" layoutX="10.0" layoutY="86.0">
+         <children>
+            <Label text="Tokens' number :" textFill="BLACK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="nbJetons" prefHeight="25.0" prefWidth="74.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="hButtonGuichet" alignment="CENTER" layoutX="10.0" layoutY="136.0">
+         <children>
+            <Button fx:id="addButtonGuichet" mnemonicParsing="false" onAction="#addGuichet" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

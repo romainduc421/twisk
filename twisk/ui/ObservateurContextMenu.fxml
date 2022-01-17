@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<ContextMenu fx:id="contextMenu" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerContextMenu">
+    <items>
+        <MenuItem fx:id="delete" text="deleteSelection" onAction="#deleteSelect"/>
+        <MenuItem fx:id="rename" text="Rename" onAction="#rename"/>
+        <MenuItem fx:id="entree" text="Entry" onAction="#entree"/>
+        <MenuItem fx:id="sortie" text="Exit" onAction="#sortie"/>
+        <MenuItem fx:id="modify" onAction="#modify" />
+    </items>
+</ContextMenu>

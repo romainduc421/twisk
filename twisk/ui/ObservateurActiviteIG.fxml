@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import twisk.components.*?>
+
+<VBoxEtapeIG fx:id="obsEtape" onContextMenuRequested="#contextMenuRequested" onDragDetected="#dragndrop" onMouseClicked="#select" prefHeight="125.0" prefWidth="200.0" style="-fx-border-color: #00ff2e; -fx-border-radius: 5; -fx-background-color: #efdda3; -fx-background-radius: 5; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twisk.controllers.ControllerActiviteIG">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <ImageView fx:id="imgView" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="description" text="Activité 7 : 0 + 1">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></Label>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+      <Pane fx:id="clientContainer" style="-fx-border-color: #0059ff; -fx-background-insets: 0 0 -1 0,0,1,2; -fx-background-radius: 3px,3px,2px,1px; -fx-background-color: #ffffcf;" prefHeight="${obsEtape.height}" />
+   </children>
+</VBoxEtapeIG>
